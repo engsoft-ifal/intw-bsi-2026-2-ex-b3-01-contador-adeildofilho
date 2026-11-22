@@ -1,3 +1,5 @@
+
+    
 // Faça o contador funcionar. Edite só este arquivo.
 //
 // TODO 1: mostre 0 no #total ao carregar a página.
@@ -8,3 +10,21 @@
 //       elemento.textContent = valor.
 
 // escreva seu código aqui
+
+let contador = 0;
+
+const total = document.querySelector("#total");
+const somar = document.querySelector("#somar");
+const zerar = document.querySelector("#zerar");
+
+total.textContent = contador;
+
+somar.addEventListener("click", () => {
+    contador++;
+    total.textContent = contador;
+});
+
+zerar.addEventListener("click", () => {
+    contador = 0;
+    total.textContent = contador;
+});
